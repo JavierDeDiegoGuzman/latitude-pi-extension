@@ -5,17 +5,20 @@
   "type": "module",
   "private": true,
   "license": "MIT",
+  "keywords": ["pi-package", "pi-extension", "latitude"],
   "pi": {
     "extensions": ["./src/index.ts"]
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@earendil-works/pi-coding-agent": "latest",
-    "typebox": "latest"
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
   },
   "devDependencies": {
+    "@earendil-works/pi-coding-agent": "latest",
+    "typebox": "latest",
     "typescript": "latest",
     "@types/node": "latest"
   }
